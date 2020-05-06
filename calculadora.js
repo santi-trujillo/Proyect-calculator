@@ -71,37 +71,37 @@ function getReult() {
     sum.onclick = function(event) {
         operatingOne = result.textContent;
         operation = "+",
-        limpiar();
+        cleaner();
     }
 
     subtract.onclick = function(event) {
         operatingOne = result.textContent;
         operation = "-",
-        limpiar();
+        cleaner();
     }
 
     multiplication.onclick = function(event) {
         operatingOne = result.textContent;
         operation = "*",
-        limpiar();
+        cleaner();
     }
 
     division.onclick = function(event) {
         operatingOne = result.textContent;
         operation = "/",
-        limpiar();
+        cleaner();
     }
 
     equal.onclick = function(event) {
         operatingToo = result.textContent;
-        resolver();
+        solve();
     }
 
 }
 
 // all functions
 
-function limpiar() {
+function cleaner() {
     result.textContent = "";
 }
 
@@ -112,26 +112,26 @@ function resetting() {
     operation = "";
 }
 
-function resolver() {
-    var res = 0;
+function solve() {
+    var answer = 0;
     switch(operation) {
         case "+":
-            res = parseFloat(operatingOne) + parseFloat(operatingToo);
+            answer = parseFloat(operatingOne) + parseFloat(operatingToo);
             break;
 
         case "-":
-            res = parseFloat(operatingOne) - parseFloat(operatingToo);
+            answer = parseFloat(operatingOne) - parseFloat(operatingToo);
             break;
 
         case "*":
-            res = parseFloat(operatingOne) * parseFloat(operatingToo);
+            answer = parseFloat(operatingOne) * parseFloat(operatingToo);
             break;
 
         case "/":
-            res = parseFloat(operatingOne) / parseFloat(operatingToo);
+            answer = parseFloat(operatingOne) / parseFloat(operatingToo);
             break;
 
         }
-    resetting();
-    result.textContent = res;
+    answeretting();
+    result.textContent = answer;
 }

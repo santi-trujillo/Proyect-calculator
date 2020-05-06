@@ -1,4 +1,4 @@
-.calculadora{
+.calculator{
     display: block;
     margin: 0 auto;
     padding: 1.5rem;
@@ -8,14 +8,14 @@
     border-radius: 10%;
 }
 
-.calculadora td button{
+.calculator td button{
     display: block;
     width: 4rem;
     height: 4rem;
     font-size: 2rem;
 }
 
-#resultado{
+#result{
     display: block;
     text-align: center;
     font-size: 2.5rem;
